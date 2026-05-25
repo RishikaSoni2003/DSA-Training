@@ -98,6 +98,40 @@
 # f1.close()
 # f2.close()
 
+# Program to print the number of lines, words, and characters
+# present in the given file
+
+# import os
+# import sys
+
+# fname = input("Enter file name: ")
+
+# if os.path.isfile(fname):
+#     print("File exists:", fname)
+#     f = open(fname, "r")
+# else:
+#     print("File does not exist:", fname)
+#     sys.exit(0)
+
+# lcount = 0
+# wcount = 0
+# ccount = 0
+
+# for line in f:
+#     lcount = lcount + 1
+#     ccount = ccount + len(line)
+
+#     words = line.split()
+#     wcount = wcount + len(words)
+
+# f.close()
+
+# print("The number of lines:", lcount)
+# print("The number of words:", wcount)
+# print("The number of characters:", ccount)
+
+
+
 # class Graph:
 #     def __init__(self,vertices):
 #         self.V=vertices
@@ -110,31 +144,31 @@
 # g=Graph(4)     
 # g.display()     
 
-class Graph:
-    def __init__(self, vertices):
-        self.V = vertices
-        self.matrix = [[0 for _ in range(vertices)] for _ in range(vertices)]
+# class Graph:
+#     def __init__(self, vertices):
+#         self.V = vertices
+#         self.matrix = [[0 for _ in range(vertices)] for _ in range(vertices)]
 
-    def display(self):
-        for row in self.matrix:
-            print(row)
+#     def display(self):
+#         for row in self.matrix:
+#             print(row)
 
-    def add_edge(self, u, v):
-        self.matrix[u][v] = 1
-        self.matrix[v][u] = 1
+#     def add_edge(self, u, v):
+#         self.matrix[u][v] = 1
+#         self.matrix[v][u] = 1
 
 
-# Create graph with 4 vertices
-g = Graph(4)
+# # Create graph with 4 vertices
+# g = Graph(4)
 
-# Add edges
-g.add_edge(0, 1)
-g.add_edge(0, 2)
-g.add_edge(1, 3)
-g.add_edge(2, 3)
+# # Add edges
+# g.add_edge(0, 1)
+# g.add_edge(0, 2)
+# g.add_edge(1, 3)
+# g.add_edge(2, 3)
 
-# Display adjacency matrix
-g.display()
+# # Display adjacency matrix
+# g.display()
 
 # hashing is a technique that is use to data into a fixed size value call a hash value or a hash code 
 # and that is use to search data fast 

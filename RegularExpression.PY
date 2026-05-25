@@ -170,9 +170,7 @@
 # # Display adjacency matrix
 # g.display()
 
-# hashing is a technique that is use to data into a fixed size value call a hash value or a hash code 
-# and that is use to search data fast 
-# convert data into fixed index
+
 
 
                                                                                                                                                                                                                                                 
